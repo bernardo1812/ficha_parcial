@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin-bottom: 0;
+}
+
+header {
+    background-color: #8CDDB6;
+    width: 100%;
+    position: relative;
+    text-align: center; 
+}
+
+#titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+
+#foto {
+    width: 15.2%;
+    margin-top: 2%;
+    margin-left: 2%;
+    border-radius: 10%;
+    margin-bottom: 4%;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%;
+}
+
+footer {
+    background-color: #8CDDB6;
+    width: 100%;
+    position: relative;
+    text-align: center; /* Centro el contenido en el footer */
+}
+
+
+
+#texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
+#ind {
+    display: flex;
+    flex-direction: row;    
+} 
+
+/* Media queries para dispositivos más pequeños */
+@media (max-width: 768px) {
+    #titulo {
+        margin-left: 0; /* Elimino el margen izquierdo en pantallas pequeñas */
+    }
+
+    #main {
+        flex-direction: column; /* Cambio el main a una columna en pantallas pequeñas */
+        align-items: center; /* Centro los elementos del main */
+    }
+
+    #foto {
+        width: 50%; /* Reduzco el ancho de la foto en pantallas pequeñas */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #logo {
+        padding-left: 0; /* Elimino el padding izquierdo en el logo del footer */
+    }
+}
